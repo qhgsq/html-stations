@@ -262,7 +262,7 @@ git fetch upstream
 
 # ↓ 最新の状態を自分のリポジトリに入れてローカルの状態も最新へ
 git merge upstream/main
-git push
+
 yarn install
 ```
 
