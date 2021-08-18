@@ -1,29 +1,33 @@
 {
-  "name": "techtrain",
+  "name": "html-stations",
   "version": "1.0.0",
+  "description": "Railway では Git で自分が取り組んだ内容を記録するときに、自動でテストが実行されます。この際、Station の内容に即した実装になっているかを最低限のラインとして確認します。\r テストが通れば Station クリアとなります。\r クリア後、TechTrain の画面に戻り、クリアになっているかを確認してみてください。",
   "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@techtrain/cli-railway": "^0.1.3",
+  "dependencies": {
     "cypress": "^8.2.0",
     "fp-ts": "^2.11.1",
     "htmlhint": "^0.15.1",
     "lite-server": "^2.6.1",
-    "prettier": "^2.3.2",
     "simple-git-hooks": "^2.5.1",
     "typescript": "^4.3.5",
     "wcag-color": "^1.1.1",
     "webpack-cli": "^4.7.2"
   },
-  "scripts": {
-    "cypress:run": "cypress run --config video=false",
-    "login:techtrain": "techtrain-railway login",
-    "hook:pre-commit": "techtrain-railway hook:pre-commit",
-    "hook:update": "simple-git-hooks",
-    "station2:prettier": "prettier -c ./src/station2.html",
-    "postinstall": "yarn hook:update && yarn login:techtrain"
+  "devDependencies": {
+    "prettier": "^2.3.0"
   },
-  "simple-git-hooks": {
-    "pre-commit": "yarn hook:pre-commit"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhgsq/html-stations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qhgsq/html-stations/issues"
+  },
+  "homepage": "https://github.com/qhgsq/html-stations#readme"
 }
